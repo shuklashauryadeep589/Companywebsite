@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -210,6 +210,569 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- ===================================== -->
+    <!-- MOVING BRAND MARQUEE -->
+    <!-- REMOVE LETTER ICONS -->
+    <!-- ===================================== -->
+
+    <!-- Brand Marquee -->
+    <div class="brand-marquee-wrapper mb-5">
+      <div class="brand-marquee">
+        <div class="brand-track">
+          <div class="brand-name">Nexora</div>
+          <div class="brand-name">Aurora</div>
+          <div class="brand-name">Skyline</div>
+          <div class="brand-name">Visionix</div>
+          <div class="brand-name">MetaCore</div>
+          <div class="brand-name">TechNova</div>
+          <div class="brand-name">Growthify</div>
+          <div class="brand-name">BrandSphere</div>
+
+          <!-- Duplicate for smooth loop -->
+
+          <div class="brand-name">Nexora</div>
+          <div class="brand-name">Aurora</div>
+          <div class="brand-name">Skyline</div>
+          <div class="brand-name">Visionix</div>
+          <div class="brand-name">MetaCore</div>
+          <div class="brand-name">TechNova</div>
+          <div class="brand-name">Growthify</div>
+          <div class="brand-name">BrandSphere</div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* ===================================== */
+      /* MARQUEE SECTION */
+      /* ===================================== */
+
+      .brand-marquee-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      .brand-marquee {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .brand-track {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        animation: marqueeMove 28s linear infinite;
+      }
+
+      .brand-name {
+        background: #fff;
+        border: 1px solid #eee;
+
+        padding: 18px 40px;
+        margin: 0 15px;
+
+        border-radius: 60px;
+
+        font-size: 20px;
+        font-weight: 700;
+        color: #111;
+
+        white-space: nowrap;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+
+        transition: 0.35s ease;
+      }
+
+      .brand-name:hover {
+        background: #f4a64b;
+        color: #fff;
+
+        transform: translateY(-5px);
+
+        box-shadow: 0 15px 35px rgba(244, 166, 75, 0.25);
+      }
+
+      /* Gradient Fade Sides */
+
+      .brand-marquee-wrapper::before,
+      .brand-marquee-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 120px;
+        height: 100%;
+        z-index: 2;
+      }
+
+      .brand-marquee-wrapper::before {
+        left: 0;
+
+        background: linear-gradient(
+          to right,
+          #f5f5f5 0%,
+          rgba(245, 245, 245, 0) 100%
+        );
+      }
+
+      .brand-marquee-wrapper::after {
+        right: 0;
+
+        background: linear-gradient(
+          to left,
+          #f5f5f5 0%,
+          rgba(245, 245, 245, 0) 100%
+        );
+      }
+
+      /* Animation */
+
+      @keyframes marqueeMove {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        .brand-name {
+          padding: 14px 28px;
+          font-size: 16px;
+          margin: 0 10px;
+        }
+      }
+    </style>
+
+    <!-- ===================================== -->
+    <!-- PREMIUM RESULTS / TRUST SECTION -->
+    <!-- MATCHING YOUR WEBSITE THEME -->
+    <!-- ===================================== -->
+
+    <section class="trust-section py-5">
+      <div class="container">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <span class="mini-title"> TRUSTED BY GROWING BUSINESSES </span>
+
+          <h1 class="main-title mt-4">
+            Real Growth.<br />
+            Real Results.
+          </h1>
+
+          <p class="main-desc mx-auto">
+            We help businesses grow with high-performing websites, SEO
+            strategies, and ROI-focused digital marketing campaigns.
+          </p>
+        </div>
+
+        <!-- Brand Boxes -->
+
+        <!-- Result Cards -->
+        <div class="row">
+          <!-- Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="result-card">
+              <div class="status before">Before</div>
+
+              <h4>Low Website Traffic</h4>
+
+              <p>
+                Poor SEO visibility and very few business leads from Google.
+              </p>
+
+              <div class="line"></div>
+
+              <div class="status after">After Working With Us</div>
+
+              <div class="growth-number">+420%</div>
+
+              <h5>Traffic Growth</h5>
+
+              <ul>
+                <li>Google Search Ranking</li>
+                <li>SEO Optimized Website</li>
+                <li>Landing Page Optimization</li>
+                <li>Higher Lead Generation</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="result-card featured-card">
+              <div class="status before-light">Before</div>
+
+              <h4>High Ad Spend</h4>
+
+              <p>Expensive campaigns with poor targeting and low ROI.</p>
+
+              <div class="line light"></div>
+
+              <div class="status after-light">After Optimization</div>
+
+              <div class="growth-number light-text">3.8X</div>
+
+              <h5>ROAS Achieved</h5>
+
+              <ul>
+                <li>Google Ads Optimization</li>
+                <li>Meta Ads Funnel Strategy</li>
+                <li>Lower CPC & Better CTR</li>
+                <li>ROI-Focused Campaigns</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="result-card">
+              <div class="status before">Before</div>
+
+              <h4>Outdated Website</h4>
+
+              <p>Slow loading website with weak mobile experience.</p>
+
+              <div class="line"></div>
+
+              <div class="status after">After Redesign</div>
+
+              <div class="growth-number">65%</div>
+
+              <h5>More Conversions</h5>
+
+              <ul>
+                <li>Modern UI/UX Design</li>
+                <li>Fast Loading Speed</li>
+                <li>Mobile Responsive Layout</li>
+                <li>Better User Experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-4">
+            <div class="stats-box">
+              <div class="stats-head">
+                <div class="stats-icon">
+                  <i class="fab fa-google"></i>
+                </div>
+
+                <div>
+                  <h4>Google Ads Growth</h4>
+                  <p>High-converting ad campaigns focused on leads and ROI.</p>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat">
+                  <h2>12M+</h2>
+                  <span>Impressions</span>
+                </div>
+
+                <div class="stat">
+                  <h2>4.1%</h2>
+                  <span>CTR</span>
+                </div>
+
+                <div class="stat">
+                  <h2>3.8X</h2>
+                  <span>ROAS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="stats-box">
+              <div class="stats-head">
+                <div class="stats-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+
+                <div>
+                  <h4>Meta Ads Performance</h4>
+                  <p>Facebook & Instagram campaigns designed for growth.</p>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat">
+                  <h2>8M+</h2>
+                  <span>Reach</span>
+                </div>
+
+                <div class="stat">
+                  <h2>150K+</h2>
+                  <span>Leads</span>
+                </div>
+
+                <div class="stat">
+                  <h2>72%</h2>
+                  <span>Lower CPL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      body {
+        background: #f5f5f5;
+      }
+
+      .trust-section {
+        background: #f5f5f5;
+        position: relative;
+      }
+
+      /* Heading */
+
+      .mini-title {
+        background: #f4a64b;
+        color: #fff;
+        padding: 8px 18px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-radius: 4px;
+      }
+
+      .main-title {
+        font-size: 56px;
+        font-weight: 800;
+        color: #111;
+        line-height: 1.2;
+      }
+
+      .main-desc {
+        max-width: 760px;
+        font-size: 18px;
+        color: #666;
+        line-height: 1.8;
+      }
+
+      /* Brand */
+
+      .brand-card {
+        background: #fff;
+        border-radius: 18px;
+        padding: 30px 20px;
+        text-align: center;
+        transition: 0.35s;
+        border: 1px solid #eee;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+      }
+
+      .brand-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(244, 166, 75, 0.15);
+      }
+
+      .brand-icon {
+        width: 65px;
+        height: 65px;
+        background: #f4a64b;
+        color: #fff;
+        margin: auto;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      /* Cards */
+
+      .result-card {
+        background: #fff;
+        border-radius: 22px;
+        padding: 35px;
+        height: 100%;
+        transition: 0.35s;
+        border: 1px solid #eee;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+      }
+
+      .result-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .featured-card {
+        background: linear-gradient(135deg, #f4a64b, #ffb95d);
+        color: #fff;
+        transform: scale(1.03);
+      }
+
+      .featured-card p,
+      .featured-card li,
+      .featured-card h5 {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .status {
+        display: inline-block;
+        padding: 7px 16px;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 18px;
+      }
+
+      .before {
+        background: rgba(220, 53, 69, 0.1);
+        color: #dc3545;
+      }
+
+      .after {
+        background: rgba(244, 166, 75, 0.15);
+        color: #f4a64b;
+      }
+
+      .before-light,
+      .after-light {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+      }
+
+      .growth-number {
+        font-size: 58px;
+        font-weight: 800;
+        color: #f4a64b;
+        line-height: 1;
+        margin-top: 20px;
+      }
+
+      .light-text {
+        color: #fff;
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background: #eee;
+        margin: 25px 0;
+      }
+
+      .line.light {
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      .result-card ul {
+        margin-top: 20px;
+        padding-left: 18px;
+      }
+
+      .result-card ul li {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      /* Stats */
+
+      .stats-box {
+        background: #fff;
+        border-radius: 22px;
+        padding: 35px;
+        border: 1px solid #eee;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+        height: 100%;
+      }
+
+      .stats-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .stats-icon {
+        width: 70px;
+        height: 70px;
+        background: #f4a64b;
+        color: #fff;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin-right: 20px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .stat {
+        background: #fafafa;
+        border-radius: 18px;
+        padding: 22px 10px;
+        text-align: center;
+      }
+
+      .stat h2 {
+        color: #f4a64b;
+        font-size: 34px;
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+
+      .stat span {
+        color: #666;
+        font-size: 14px;
+      }
+
+      /* Responsive */
+
+      @media (max-width: 991px) {
+        .main-title {
+          font-size: 42px;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main-title {
+          font-size: 34px;
+        }
+
+        .main-desc {
+          font-size: 16px;
+        }
+
+        .result-card,
+        .stats-box {
+          padding: 28px;
+        }
+
+        .stats-head {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .stats-icon {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
     <!-- About Start -->
     <div class="container-fluid py-5">
       <div class="container">

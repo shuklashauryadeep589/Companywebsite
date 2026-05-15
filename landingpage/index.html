@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -127,7 +127,9 @@
                     >
                       1000+
                     </h2>
-                    <p style="font-size: 18px">Websites Built</p>
+                    <p style="font-size: 18px; color: #000000">
+                      Websites Built
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -141,7 +143,9 @@
                     >
                       800+
                     </h2>
-                    <p style="font-size: 18px">Software Solutions</p>
+                    <p style="font-size: 18px; color: #000000">
+                      Software Solutions
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -155,7 +159,7 @@
                     >
                       5 Years
                     </h2>
-                    <p style="font-size: 18px">Of Excellence</p>
+                    <p style="font-size: 18px; color: #000000">Of Excellence</p>
                   </div>
                 </div>
               </div>
@@ -177,6 +181,439 @@
       </div>
     </section>
     <!--================Banner Area =================-->
+
+    <div class="brand-marquee-wrapper mb-5">
+      <div class="brand-marquee">
+        <div class="brand-track">
+          <div class="brand-name">Nexora</div>
+          <div class="brand-name">Aurora</div>
+          <div class="brand-name">Skyline</div>
+          <div class="brand-name">Visionix</div>
+          <div class="brand-name">MetaCore</div>
+          <div class="brand-name">TechNova</div>
+          <div class="brand-name">Growthify</div>
+          <div class="brand-name">BrandSphere</div>
+
+          <!-- Duplicate for smooth loop -->
+
+          <div class="brand-name">Nexora</div>
+          <div class="brand-name">Aurora</div>
+          <div class="brand-name">Skyline</div>
+          <div class="brand-name">Visionix</div>
+          <div class="brand-name">MetaCore</div>
+          <div class="brand-name">TechNova</div>
+          <div class="brand-name">Growthify</div>
+          <div class="brand-name">BrandSphere</div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* ===================================== */
+      /* MARQUEE SECTION */
+      /* ===================================== */
+
+      .brand-marquee-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      .brand-marquee {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .brand-track {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        animation: marqueeMove 28s linear infinite;
+      }
+
+      .brand-name {
+        background: #fff;
+        border: 1px solid #eee;
+
+        padding: 18px 40px;
+        margin: 0 15px;
+
+        border-radius: 60px;
+
+        font-size: 20px;
+        font-weight: 700;
+        color: #111;
+
+        white-space: nowrap;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+
+        transition: 0.35s ease;
+      }
+
+      .brand-name:hover {
+        background: #f4a64b;
+        color: #fff;
+
+        transform: translateY(-5px);
+
+        box-shadow: 0 15px 35px rgba(244, 166, 75, 0.25);
+      }
+
+      /* Gradient Fade Sides */
+
+      .brand-marquee-wrapper::before,
+      .brand-marquee-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 120px;
+        height: 100%;
+        z-index: 2;
+      }
+
+      .brand-marquee-wrapper::before {
+        left: 0;
+
+        background: linear-gradient(
+          to right,
+          #f5f5f5 0%,
+          rgba(245, 245, 245, 0) 100%
+        );
+      }
+
+      .brand-marquee-wrapper::after {
+        right: 0;
+
+        background: linear-gradient(
+          to left,
+          #f5f5f5 0%,
+          rgba(245, 245, 245, 0) 100%
+        );
+      }
+
+      /* Animation */
+
+      @keyframes marqueeMove {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        .brand-name {
+          padding: 14px 28px;
+          font-size: 16px;
+          margin: 0 10px;
+        }
+      }
+    </style>
+
+    <!-- ===================================== -->
+    <!-- PREMIUM RESULTS / TRUST SECTION -->
+    <!-- MATCHING YOUR WEBSITE THEME -->
+    <!-- ===================================== -->
+    <style>
+      .growth-section {
+        background: #f6f8fb;
+        padding: 80px 0;
+      }
+
+      .growth-title {
+        font-size: 52px;
+        font-weight: 900;
+        color: #0f172a;
+        line-height: 1.2;
+        margin-top: 20px;
+      }
+
+      .growth-sub {
+        max-width: 760px;
+        margin: 20px auto 0;
+        font-size: 18px;
+        color: #475569;
+        line-height: 1.7;
+      }
+
+      .card-box {
+        background: #fff;
+        border-radius: 18px;
+        padding: 28px;
+        height: 100%;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        border: 1px solid #e2e8f0;
+      }
+
+      .dark-card {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #fff;
+      }
+
+      .badge-pill {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+
+      .stat-box {
+        background: #f1f5f9;
+        padding: 18px;
+        text-align: center;
+        border-radius: 14px;
+      }
+
+      .brand-icon {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+      }
+
+      @media (max-width: 768px) {
+        .growth-title {
+          font-size: 34px;
+        }
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <section class="growth-section">
+      <div class="container">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <span class="badge-pill" style="background: #ffb020; color: #fff">
+            TRUSTED BY GROWING BUSINESSES
+          </span>
+
+          <h1 class="growth-title">Real Growth.<br />Real Results.</h1>
+
+          <p class="growth-sub">
+            We help businesses grow with high-performing websites, SEO
+            strategies, and ROI-focused digital marketing campaigns.
+          </p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card-box">
+              <span
+                class="badge-pill"
+                style="background: #fee2e2; color: #b91c1c"
+                >Before</span
+              >
+
+              <h4 class="mt-3">Low Website Traffic</h4>
+              <p style="color: #64748b">
+                Poor SEO visibility and very few business leads from Google.
+              </p>
+
+              <hr />
+
+              <span
+                class="badge-pill"
+                style="background: #ecfeff; color: #0e7490"
+                >After Working With Us</span
+              >
+
+              <h2
+                style="
+                  font-size: 54px;
+                  font-weight: 900;
+                  color: #0ea5e9;
+                  margin-top: 10px;
+                "
+              >
+                +420%
+              </h2>
+              <h5>Traffic Growth</h5>
+
+              <ul style="color: #475569">
+                <li>Google Search Ranking</li>
+                <li>SEO Optimized Website</li>
+                <li>Landing Page Optimization</li>
+                <li>Higher Lead Generation</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card-box dark-card">
+              <span
+                class="badge-pill"
+                style="background: rgba(255, 255, 255, 0.15)"
+                >Before</span
+              >
+
+              <h4 class="mt-3">High Ad Spend</h4>
+              <p style="color: #cbd5e1">
+                Expensive campaigns with poor targeting and low ROI.
+              </p>
+
+              <hr style="border-color: rgba(255, 255, 255, 0.2)" />
+
+              <span
+                class="badge-pill"
+                style="background: rgba(255, 255, 255, 0.12)"
+                >After Optimization</span
+              >
+
+              <h2
+                style="
+                  font-size: 54px;
+                  font-weight: 900;
+                  color: #38bdf8;
+                  margin-top: 10px;
+                "
+              >
+                3.8X
+              </h2>
+              <h5>ROAS Achieved</h5>
+
+              <ul style="color: #e2e8f0">
+                <li>Google Ads Optimization</li>
+                <li>Meta Ads Funnel Strategy</li>
+                <li>Lower CPC & Better CTR</li>
+                <li>ROI-Focused Campaigns</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card-box">
+              <span
+                class="badge-pill"
+                style="background: #fee2e2; color: #b91c1c"
+                >Before</span
+              >
+
+              <h4 class="mt-3">Outdated Website</h4>
+              <p style="color: #64748b">
+                Slow loading website with weak mobile experience.
+              </p>
+
+              <hr />
+
+              <span
+                class="badge-pill"
+                style="background: #ecfeff; color: #0e7490"
+                >After Redesign</span
+              >
+
+              <h2
+                style="
+                  font-size: 54px;
+                  font-weight: 900;
+                  color: #10b981;
+                  margin-top: 10px;
+                "
+              >
+                65%
+              </h2>
+              <h5>More Conversions</h5>
+
+              <ul style="color: #475569">
+                <li>Modern UI/UX Design</li>
+                <li>Fast Loading Speed</li>
+                <li>Mobile Responsive Layout</li>
+                <li>Better User Experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="row mt-5">
+          <!-- Google -->
+          <div class="col-lg-6 mb-4">
+            <div class="card-box">
+              <div class="d-flex align-items-center mb-3">
+                <div class="ms-3">
+                  <h4
+                    class="mb-0"
+                    style="font-size: 24px; font-weight: 900; color: #f97316"
+                  >
+                    Google Ads Growth
+                  </h4>
+                  <p class="mb-0 text-muted">
+                    High-converting ad campaigns focused on leads and ROI.
+                  </p>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <h2 style="color: #0ea5e9">12M+</h2>
+                  <span>Impressions</span>
+                </div>
+                <div class="stat-box">
+                  <h2 style="color: #0ea5e9">4.1%</h2>
+                  <span>CTR</span>
+                </div>
+                <div class="stat-box">
+                  <h2 style="color: #0ea5e9">3.8X</h2>
+                  <span>ROAS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meta -->
+          <div class="col-lg-6 mb-4">
+            <div class="card-box">
+              <div class="d-flex align-items-center mb-3">
+                <div class="ms-3">
+                  <h4
+                    class="mb-0"
+                    style="font-size: 24px; font-weight: 900; color: #0b9cfd"
+                  >
+                    Meta Ads Performance
+                  </h4>
+                  <p class="mb-0">
+                    Facebook & Instagram campaigns designed for growth.
+                  </p>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <h2 style="color: #f97316">8M+</h2>
+                  <span>Reach</span>
+                </div>
+                <div class="stat-box">
+                  <h2 style="color: #f97316">150K+</h2>
+                  <span>Leads</span>
+                </div>
+                <div class="stat-box">
+                  <h2 style="color: #f97316">72%</h2>
+                  <span>Lower CPL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--================ About History Area  =================-->
     <section class="about_history_area section_gap">
       <div class="container">
@@ -222,7 +659,9 @@
         padding: 25px;
         margin-bottom: 30px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -702,8 +1141,14 @@
             text-decoration: none;
             transition: all 0.3s ease;
           "
-          onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(249,168,37,0.6)';"
-          onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+          onmouseover="
+            this.style.transform = 'scale(1.05)';
+            this.style.boxShadow = '0 5px 15px rgba(249,168,37,0.6)';
+          "
+          onmouseout="
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = 'none';
+          "
         >
           Let’s Chat, I’m Listening
         </a>

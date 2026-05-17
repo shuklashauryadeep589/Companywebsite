@@ -68,7 +68,7 @@
       }
     </style>
   </head>
-   <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-TSLTHPM68H"
@@ -386,10 +386,43 @@
       }
 
       .stat-box {
-        background: #f1f5f9;
-        padding: 18px;
+        color: white;
+        padding: 28px 22px;
         text-align: center;
-        border-radius: 14px;
+        border-radius: 20px;
+        background-color: rgb(255, 237, 204);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        transition: all 0.35s ease;
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      .stat-box::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        pointer-events: none;
+      }
+
+      .stat-box:hover {
+        transform: translateY(-8px) scale(1.02);
+      }
+
+      .stat-box h2 {
+        font-size: 52px;
+        font-weight: 900;
+        color: #f3c300;
+        margin-bottom: 10px;
+      }
+
+      .stat-box p,
+      .stat-box span {
+        color: #e5e7eb;
+        font-size: 16px;
+        font-weight: 500;
       }
 
       .brand-icon {
@@ -404,6 +437,206 @@
         }
         .stats-grid {
           grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <!-- ===================================== -->
+    <!-- GOOGLE REVIEWS MARQUEE -->
+    <!-- ===================================== -->
+
+    <section class="reviews-marquee-section">
+      <div class="reviews-heading text-center">
+        <span class="review-badge">TRUSTED BY CLIENTS</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real reviews from businesses we helped grow digitally.</p>
+      </div>
+
+      <div class="reviews-marquee">
+        <div class="reviews-track">
+          <!-- REVIEW CARD -->
+          <div class="review-card">
+            <img src="./image/r1.webp" alt="review" />
+          </div>
+
+          <div class="review-card">
+            <img src="./image/r2.webp" alt="review" />
+          </div>
+
+          <div class="review-card">
+            <img src="./image/r3.webp" alt="review" />
+          </div>
+
+          <div class="review-card">
+            <img src="./image/r4.webp" alt="review" />
+          </div>
+<div class="review-card">
+            <img src="./image/r5.webp" alt="review" />
+          </div>
+          <!-- DUPLICATE FOR INFINITE LOOP -->
+
+          <div class="review-card">
+            <img src="./image/r1.webp " alt="review" />
+          </div>
+
+          <div class="review-card">
+            <img src="./image/r2.webp" alt="review" />
+          </div>
+
+          <div class="review-card">
+            <img src="./image/r3.webp" alt="review" />
+          </div>
+
+          <div class="review-card">
+            <img src="./image/r4.webp" alt="review" />
+          </div><div class="review-card">
+            <img src="./image/r5.webp" alt="review" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* ===================================== */
+      /* REVIEWS SECTION */
+      /* ===================================== */
+
+      .reviews-marquee-section {
+        background: #f8fafc;
+        padding: 80px 0 60px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .reviews-heading {
+        margin-bottom: 45px;
+      }
+
+      .review-badge {
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 999px;
+
+        background: #f4a64b;
+        color: #fff;
+
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        margin-bottom: 15px;
+      }
+
+      .reviews-heading h2 {
+        font-size: 48px;
+        font-weight: 900;
+        color: #0f172a;
+
+        margin-bottom: 15px;
+      }
+
+      .reviews-heading p {
+        color: #64748b;
+        font-size: 18px;
+      }
+
+      .reviews-marquee {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .reviews-track {
+        display: flex;
+        gap: 30px;
+
+        width: max-content;
+
+        animation: reviewsScroll 40s linear infinite;
+      }
+
+      .review-card {
+        min-width: auto;
+
+        border-radius: 24px;
+
+        overflow: hidden;
+
+        background: #fff;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+        transition:
+          transform 0.35s ease,
+          box-shadow 0.35s ease;
+      }
+
+      .review-card:hover {
+        transform: translateY(-8px);
+
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+      }
+
+      @media (max-width: 768px) {
+        .review-card {
+          min-width: auto;
+          height: 300px;
+        }
+      }
+
+      .review-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain; /* fills full card */
+        display: block;
+      }
+
+      @keyframes reviewsScroll {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Gradient Fade */
+
+      .reviews-marquee-section::before,
+      .reviews-marquee-section::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+
+        width: 120px;
+        height: 100%;
+
+        z-index: 5;
+      }
+
+      .reviews-marquee-section::before {
+        left: 0;
+
+        background: linear-gradient(to right, #f8fafc, rgba(248, 250, 252, 0));
+      }
+
+      .reviews-marquee-section::after {
+        right: 0;
+
+        background: linear-gradient(to left, #f8fafc, rgba(248, 250, 252, 0));
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        .reviews-heading h2 {
+          font-size: 34px;
+        }
+
+        .reviews-track {
+          gap: 18px;
         }
       }
     </style>
